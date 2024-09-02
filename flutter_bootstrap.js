@@ -9,8 +9,24 @@ if (!window._flutter) {
 _flutter.buildConfig = {"engineRevision":"2f577d8e3fa20a1cd151c0d98ff385e3a4426af8","builds":[{"compileTarget":"dart2js","renderer":"canvaskit","mainJsPath":"main.dart.js"}]};
 
 
+const serviceWorkerVersion = "2094341116";
+
+let baseUri = document.baseURI;
+if (baseUri.endsWith('/')) {
+    baseUri = baseUri.slice(0, -1);
+}
+
 _flutter.loader.load({
-  serviceWorkerSettings: {
-    serviceWorkerVersion: "2016061724"
-  }
+    config: {
+      canvasKitBaseUrl: `${baseUri}/canvaskit/`,
+    },
+    serviceWorkerSettings: {
+      serviceWorkerVersion: serviceWorkerVersion,
+      serviceWorkerUrl: `${baseUri}/flutter_service_worker.js?v=${serviceWorkerVersion}`,
+    },
+    onEntrypointLoaded: function (engineInitializer) {
+      engineInitializer.initializeEngine().then(function (appRunner) {
+        appRunner.runApp();
+      });
+    },
 });
