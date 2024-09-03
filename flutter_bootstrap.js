@@ -9,7 +9,7 @@ if (!window._flutter) {
 _flutter.buildConfig = {"engineRevision":"2f577d8e3fa20a1cd151c0d98ff385e3a4426af8","builds":[{"compileTarget":"dart2js","renderer":"canvaskit","mainJsPath":"main.dart.js"}]};
 
 
-const serviceWorkerVersion = "2094341116";
+const serviceWorkerVersion = "3000362928";
 
 let baseUri = document.baseURI;
 if (baseUri.endsWith('/')) {
@@ -17,9 +17,6 @@ if (baseUri.endsWith('/')) {
 }
 
 _flutter.loader.load({
-    config: {
-      canvasKitBaseUrl: `${baseUri}/canvaskit/`,
-    },
     serviceWorkerSettings: {
       serviceWorkerVersion: serviceWorkerVersion,
       serviceWorkerUrl: `${baseUri}/flutter_service_worker.js?v=${serviceWorkerVersion}`,
