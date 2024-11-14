@@ -1,11 +1,11 @@
 {
-    "name": "uncle_roger_app",
-    "short_name": "uncle_roger_app",
+    "name": "Fuiyoh! Uncle Roger",
+    "short_name": "Fuiyoh! Uncle Roger",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "The best fried rice in town",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
