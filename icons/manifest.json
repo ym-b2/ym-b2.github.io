@@ -1,5 +1,13 @@
 {
- "name": "Fuiyoh! It's Uncle Roger",
+ "name": "Fuiyoh! Uncle Roger",
+ "short_name": "Fuiyoh! Uncle Roger",
+ "start_url": "/",
+ "display": "standalone",
+ "background_color": "#0175C2",
+ "theme_color": "#0175C2",
+ "description": "The best fried rice in town",
+ "orientation": "portrait-primary",
+ "prefer_related_applications": false,
  "icons": [
   {
    "src": "android-icon-36x36.png",
