@@ -119273,7 +119273,7 @@ if(s.a){r=s.b
 r=r!==B.u6&&r!==B.u7}else r=!1
 if(r){r=o.c
 r.toString
-A.b7P(r,3,B.r,!0,new A.aXT(),t.y)}if(s.b===B.u8&&B.c.p(window.navigator.userAgent.toLowerCase(),"ios")){o=o.c
+A.b7P(r,3,B.r,!0,new A.aXT(),t.y)}if(s.b===B.u8&&B.c.p(window.navigator.userAgent.toLowerCase(),"mobile")&&B.c.p(window.navigator.userAgent.toLowerCase(),"safari")){o=o.c
 o.toString
 A.b7P(o,3,B.r,!0,new A.aXU(),t.y)}}},
 $S:4}
