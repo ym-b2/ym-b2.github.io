@@ -69,9 +69,41 @@
     });
   </script>
 
+  <style>
+    .centered-container {
+      position: relative; /* Needed for stacking child elements */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Full viewport height */
+    }
+
+    img {
+      position: absolute; /* Stack the image on the loader */
+    }
+
+    .loader {
+      border: 5px solid #f3f3f3; /* Light grey */
+      border-top: 5px solid #ff6600; /* Blue */
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+
 </head>
 <body>
   <input type="hidden" id="osUserID" value="example_device_token" />
+  <div class="centered-container">
+    <div class="loader"></div>
+    <img src="./assets/logo.png" alt=""  width="60" height="60"/>
+  </div>
   <script>
     let deferredPrompt;
 
