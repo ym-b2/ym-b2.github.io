@@ -117779,7 +117779,8 @@ B.b.G(r,new A.L(q,new A.aSs(),A.Y(q).i("L<1,h>")))
 r.push(B.jl)
 r.push(k.CM("Subtotal",k.e.z))
 r.push(k.CM("Tax (6%)",k.e.at))
-r.push(k.CM("Service Charge (10%)",k.e.ax))
+q=k.e.ax
+if(q!==0)r.push(k.CM("Service Charge (10%)",q))
 q=k.e.Q
 if(q>0)r.push(k.K1("Voucher Discount",q,!0,B.hS))
 r.push(k.CM("Rounding Adj",k.e.ay))
@@ -117833,7 +117834,7 @@ s=A.fy(j,!0,j,j,j,j,j,j,j,j,A.aI("Order #"+A.d(s),j,j,j,j,j,j,j,j,j,j,j,j))
 s=A.cS(s,k.f?A.e_(l,j,j,j,B.H,!1):B.dd,j,!1)}else{s=k.e
 if(s!=null)s=s.c
 else s=""
-s=A.mg(new A.kl(A.a([new A.e2("Home",j),new A.e2("Delivery",new A.aSt(a)),new A.e2("Order #"+A.d(s),j)],t.MM),j),a,2)
+s=A.mg(new A.kl(A.a([new A.e2("Home",j),new A.e2("Order History",new A.aSt(a)),new A.e2("Order #"+A.d(s),j)],t.MM),j),a,2)
 if(k.f){r=$.js()
 r=A.e_(A.a([A.aM(j,A.aE(A.R(l,!0,t.l7),B.q,B.n,B.k),B.o,j,j,r,j,j,B.ti,j,j,j,j)],t.p),j,j,j,B.H,!1)}else r=B.dd
 r=A.cS(s,r,j,!1)

@@ -9,7 +9,7 @@ if (!window._flutter) {
 _flutter.buildConfig = {"engineRevision":"cb4b5fff73850b2e42bd4de7cb9a4310a78ac40d","builds":[{"compileTarget":"dart2js","renderer":"canvaskit","mainJsPath":"main.dart.js"}]};
 
 
-const serviceWorkerVersion = "2400484059";
+const serviceWorkerVersion = "1890324914";
 
 let baseUri = document.baseURI;
 if (baseUri.endsWith('/')) {
